@@ -1,7 +1,5 @@
 package;
 
-import flixel.math.FlxMath;
-import haxe.Timer;
 import flixel.system.FlxAssets.FlxShader;
 
 class VhsShader extends FlxShader
@@ -107,7 +105,8 @@ class VhsShader extends FlxShader
     public function new()
     {
         super();
-        iTime.value = [Timer.stamp()];
+        iTime.value = [0];
+	iResolution.value = [0, 0, 0];
     }
     public function update(elapsed:Float)
     {
