@@ -63,6 +63,7 @@ import lime.utils.Assets;
 import openfl.display.BlendMode;
 import openfl.display.StageQuality;
 import openfl.filters.ShaderFilter;
+import flixel.system.FlxAssets.FlxShader;
 #if mobileC
 import mobile.Mobilecontrols;
 #end
@@ -163,6 +164,9 @@ class PlayState extends MusicBeatState
 	public var iconP2:HealthIcon; //what could go wrong?
 	public var camHUD:FlxCamera;
 	private var camGame:FlxCamera;
+
+	//Shader
+	public var vhs:VhsShader;
 
 	public static var offsetTesting:Bool = false;
 
@@ -332,6 +336,11 @@ class PlayState extends MusicBeatState
 		FlxG.cameras.add(camHUD);
 
 		FlxCamera.defaultCameras = [camGame];
+
+		//Shader
+		vhs = new VhsShader();
+		camGame.setFilters([new ShaderFilter(vhs)]);
+		camHUD.setFilters([new ShaderFilter(vhs)]);
 
 		persistentUpdate = true;
 		persistentDraw = true;
