@@ -169,7 +169,7 @@ class MainMenuState extends MusicBeatState
 			{
 				if (optionShit[curSelected] == 'donate')
 				{
-					fancyOpenURL("https://ninja-muffin24.itch.io/funkin");
+					//fancyOpenURL("https://ninja-muffin24.itch.io/funkin");
 				}
 				else
 				{
@@ -237,6 +237,8 @@ class MainMenuState extends MusicBeatState
 
 			case 'options':
 				FlxG.switchState(new OptionsMenu());
+			case 'donate':
+				FlxG.switchState(new ChartingState());
 		}
 	}
 
