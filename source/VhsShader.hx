@@ -4,7 +4,7 @@ import flixel.math.FlxMath;
 import haxe.Timer;
 import flixel.system.FlxAssets.FlxShader;
 
-class Vhs extends FlxShader
+class VhsShader extends FlxShader
 {
     @:glFragmentSource('
         #pragma header
