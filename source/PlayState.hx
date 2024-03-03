@@ -762,7 +762,7 @@ class PlayState extends MusicBeatState
 		                        dark.alpha = 0;
 		                        dark.scrollFactor.set(0.1, 0.1);
 				        dark.updateHitbox();
-		                        add(dark)
+		                        add(dark);
 				                
 			}
 			default:
