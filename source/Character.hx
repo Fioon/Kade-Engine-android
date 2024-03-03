@@ -505,10 +505,10 @@ class Character extends FlxSprite
 				trace(tex.frames.length);
 
 				animation.addByPrefix('idle', 'idle', 24, false);
-				animation.addByPrefix('singUP', 'up', 24, false);
-				animation.addByPrefix('singLEFT', 'left', 24, false);
-				animation.addByPrefix('singRIGHT', 'right', 24, false);
-				animation.addByPrefix('singDOWN', 'down', 24, false);
+				animation.addByPrefix('singUP', 'up', [0, 1, 2, 3, 4], "", 24, false);
+				animation.addByPrefix('singLEFT', 'left', [0, 1, 2, 3, 4], "", 24, false);
+				animation.addByPrefix('singRIGHT', 'right', [0, 1, 2, 3, 4], "", 24, false);
+				animation.addByPrefix('singDOWN', 'down', [0, 1, 2, 3, 4], "", 24, false);
 				animation.addByPrefix('singUPmiss', 'upmiss', 24, false);
 				animation.addByPrefix('singLEFTmiss', 'leftmiss', 24, false);
 				animation.addByPrefix('singRIGHTmiss', 'rightmiss', 24, false);
@@ -524,8 +524,9 @@ class Character extends FlxSprite
 				addOffset("singLEFTmiss", -7, 6);
 				addOffset("singDOWNmiss", -5, 3);
 
-				playAnim('idle');
+				setGraphicSize(0.5);
 				updateHitbox();
+				playAnim('idle');
 				flipX = true;
 			case 'ep-mouse':
 				tex = Paths.getSparrowAtlas('characters/endingpain/sadmouse');
@@ -544,6 +545,8 @@ class Character extends FlxSprite
 				addOffset("singDOWN", 300, 250);
 				addOffset("scared", 300, 249);
 
+				setGraphicSize(0.9);
+				updateHitbox();
 				playAnim('idle');
 		}
 
