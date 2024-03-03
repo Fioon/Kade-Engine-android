@@ -498,6 +498,35 @@ class Character extends FlxSprite
 				addOffset("singDOWN-alt", -30, -27);
 
 				playAnim('idle');
+			case 'ep-bf':
+				var tex = Paths.getSparrowAtlas('characters/EndingPain_bf');
+				frames = tex;
+
+				trace(tex.frames.length);
+
+				animation.addByPrefix('idle', 'idle', 24, false);
+				animation.addByPrefix('singUP', 'up', 24, false);
+				animation.addByPrefix('singLEFT', 'left', 24, false);
+				animation.addByPrefix('singRIGHT', 'right', 24, false);
+				animation.addByPrefix('singDOWN', 'down', 24, false);
+				animation.addByPrefix('singUPmiss', 'upmiss', 24, false);
+				animation.addByPrefix('singLEFTmiss', 'leftmiss', 24, false);
+				animation.addByPrefix('singRIGHTmiss', 'rightmiss', 24, false);
+				animation.addByPrefix('singDOWNmiss', 'downmiss', 24, false);
+
+				addOffset('idle');
+				addOffset("singUP", 0, 0);
+				addOffset("singRIGHT", 0, 0);
+				addOffset("singLEFT", 0, 0);
+				addOffset("singDOWN", 0, 0);
+				addOffset("singUPmiss", 3, 22);
+				addOffset("singRIGHTmiss", 1, 9);
+				addOffset("singLEFTmiss", -7, 6);
+				addOffset("singDOWNmiss", -5, 3);
+
+				playAnim('idle');
+				updateHitbox();
+				flipX = true;
 		}
 
 		dance();
