@@ -750,6 +750,21 @@ class PlayState extends MusicBeatState
 	
 						add(stageCurtains);
 				}
+                        case 'staticStage':
+                        {
+				        defaultCamZoom = 0.9;
+					curStage = 'staticStage';
+				        var epstreet:FlxSprite = new FlxSprite(-600, -300).loadGraphic(Paths.image('street/street1','endingpain'));
+					epstreet.antialiasing = true;
+					epstreet.updateHitbox();
+					add(epstreet);
+				        var dark:FlxSprite = new FlxSprite(-300, 0).makeGraphic(3000, 3000, FlxColor.BLACK);
+		                        dark.alpha = 0;
+		                        dark.scrollFactor.set(0.1, 0.1);
+				        dark.updateHitbox();
+		                        add(dark)
+				                
+			}
 			default:
 			{
 					defaultCamZoom = 0.9;
@@ -847,6 +862,11 @@ class PlayState extends MusicBeatState
 				dad.x -= 150;
 				dad.y += 100;
 				camPos.set(dad.getGraphicMidpoint().x + 300, dad.getGraphicMidpoint().y);
+			case 'ep-mouse':
+				dad.x = 140;
+				dad.y = 160;
+				camPos.set(-10, -30);
+				
 		}
 
 
@@ -890,6 +910,11 @@ class PlayState extends MusicBeatState
 				boyfriend.y += 220;
 				gf.x += 180;
 				gf.y += 300;
+			case 'staticStage':
+				boyfriend.x = 770;
+				boyfriend.y = 100;
+				dad.x = -100;
+				dad.y = 50;
 		}
 
 		if (FlxG.save.data.char)
