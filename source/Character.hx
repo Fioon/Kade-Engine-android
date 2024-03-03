@@ -499,7 +499,7 @@ class Character extends FlxSprite
 
 				playAnim('idle');
 			case 'ep-bf':
-				var tex = Paths.getSparrowAtlas('characters/EndingPain_bf');
+				var tex = Paths.getSparrowAtlas('characters/endingpain/EndingPain_bf');
 				frames = tex;
 
 				trace(tex.frames.length);
@@ -527,6 +527,24 @@ class Character extends FlxSprite
 				playAnim('idle');
 				updateHitbox();
 				flipX = true;
+			case 'ep-mouse':
+				tex = Paths.getSparrowAtlas('characters/endingpain/sadmouse');
+				frames = tex;
+				animation.addByPrefix('idle', 'idle', 24);
+				animation.addByPrefix('singUP', 'up', 24);
+				animation.addByPrefix('singRIGHT', 'right', 24);
+				animation.addByPrefix('singDOWN', 'down', 24);
+				animation.addByPrefix('singLEFT', 'left', 24);
+				animation.addByPrefix('scared', 'scared', 24);
+
+				addOffset('idle' 302, 250);
+				addOffset("singUP", 300, 250);
+				addOffset("singRIGHT", 300, 250);
+				addOffset("singLEFT", 300, 250);
+				addOffset("singDOWN", 300, 250);
+				addOffset("scared", 300, 249);
+
+				playAnim('idle');
 		}
 
 		dance();
