@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="EndingPain_bf.png">
+	<!-- Created with Adobe Animate version 20.5.1.31044 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="down0000" x="0" y="0" width="1080" height="1080"/>
+	<SubTexture name="down0001" x="1080" y="0" width="1080" height="1080"/>
+	<SubTexture name="down0002" x="2160" y="0" width="1080" height="1080"/>
+	<SubTexture name="down0003" x="3240" y="0" width="1080" height="1080"/>
+	<SubTexture name="down0004" x="4320" y="0" width="1080" height="1080"/>
+	<SubTexture name="downmiss0000" x="5400" y="0" width="1080" height="1080"/>
+	<SubTexture name="downmiss0001" x="6480" y="0" width="1080" height="1080"/>
+	<SubTexture name="idle0000" x="0" y="1080" width="1080" height="1080"/>
+	<SubTexture name="idle0001" x="1080" y="1080" width="1080" height="1080"/>
+	<SubTexture name="idle0002" x="2160" y="1080" width="1080" height="1080"/>
+	<SubTexture name="idle0003" x="3240" y="1080" width="1080" height="1080"/>
+	<SubTexture name="idle0004" x="4320" y="1080" width="1080" height="1080"/>
+	<SubTexture name="idle0005" x="5400" y="1080" width="1080" height="1080"/>
+	<SubTexture name="idle0006" x="6480" y="1080" width="1080" height="1080"/>
+	<SubTexture name="idle0007" x="0" y="2160" width="1080" height="1080"/>
+	<SubTexture name="left0000" x="1080" y="2160" width="1080" height="1080"/>
+	<SubTexture name="left0001" x="2160" y="2160" width="1080" height="1080"/>
+	<SubTexture name="left0002" x="3240" y="2160" width="1080" height="1080"/>
+	<SubTexture name="left0003" x="4320" y="2160" width="1080" height="1080"/>
+	<SubTexture name="left0004" x="5400" y="2160" width="1080" height="1080"/>
+	<SubTexture name="leftmiss0000" x="6480" y="2160" width="1080" height="1080"/>
+	<SubTexture name="leftmiss0001" x="0" y="3240" width="1080" height="1080"/>
+	<SubTexture name="leftmiss0002" x="1080" y="3240" width="1080" height="1080"/>
+	<SubTexture name="right0000" x="2160" y="3240" width="1080" height="1080"/>
+	<SubTexture name="right0001" x="3240" y="3240" width="1080" height="1080"/>
+	<SubTexture name="right0002" x="4320" y="3240" width="1080" height="1080"/>
+	<SubTexture name="right0003" x="5400" y="3240" width="1080" height="1080"/>
+	<SubTexture name="right0004" x="6480" y="3240" width="1080" height="1080"/>
+	<SubTexture name="rightmiss0000" x="0" y="4320" width="1080" height="1080"/>
+	<SubTexture name="rightmiss0001" x="1080" y="4320" width="1080" height="1080"/>
+	<SubTexture name="rightmiss0002" x="2160" y="4320" width="1080" height="1080"/>
+	<SubTexture name="up0000" x="3240" y="4320" width="1080" height="1080"/>
+	<SubTexture name="up0001" x="4320" y="4320" width="1080" height="1080"/>
+	<SubTexture name="up0002" x="5400" y="4320" width="1080" height="1080"/>
+	<SubTexture name="up0003" x="6480" y="4320" width="1080" height="1080"/>
+	<SubTexture name="up0004" x="0" y="5400" width="1080" height="1080"/>
+	<SubTexture name="upmiss0000" x="1080" y="5400" width="1080" height="1080"/>
+	<SubTexture name="upmiss0001" x="2160" y="5400" width="1080" height="1080"/>
+</TextureAtlas>
