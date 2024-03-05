@@ -1,7 +1,7 @@
 {
 	"song": {
-		"player1": "bf",
-		"gfVersion": "kong gf",
+		"player1": "ep-bf",
+		"gfVersion": "gf",
 		"notes": [
 			{
 				"sectionNotes": [
@@ -4756,10 +4756,10 @@
 				]
 			]
 		],
-		"player2": "mouse1",
+		"player2": "ep-mouse",
 		"player3": null,
 		"splashSkin": "noteSplashes",
-		"song": "Happy-Finale",
+		"song": "Happy Finale",
 		"needsVoices": true,
 		"arrowSkin": "",
 		"validScore": true,
