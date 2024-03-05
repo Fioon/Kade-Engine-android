@@ -754,7 +754,7 @@ class PlayState extends MusicBeatState
                         {
 				        defaultCamZoom = 0.9;
 					curStage = 'staticStage';
-				        var epstreet:FlxSprite = new FlxSprite(-600, -300).loadGraphic(Paths.image('street/street1','endingpain'));
+				        var epstreet:FlxSprite = new FlxSprite(-600, -300).loadGraphic(Paths.image('street/street1','week1'));
 					epstreet.antialiasing = true;
 					epstreet.updateHitbox();
 					add(epstreet);
