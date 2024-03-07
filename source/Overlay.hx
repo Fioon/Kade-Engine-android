@@ -1,4 +1,4 @@
-package meta;
+package;
 
 import haxe.Timer;
 import openfl.events.Event;
@@ -20,7 +20,7 @@ class Overlay extends TextField
 	// display info
 	static var displayFps = true;
 	static var displayMemory = true;
-	static var displayExtra = true;
+	static var displayExtra = false;
 
 	public function new(x:Float, y:Float)
 	{
@@ -67,7 +67,6 @@ class Overlay extends TextField
 		{
 			text = '' // set up the text itself
 				+ (displayFps ? times.length + " FPS\n" : '') // Framerate
-			#if !neko + (displayExtra ? Main.mainClassState + "\n" : '') #end // Current Game State
 			+ (displayMemory ? '${getInterval(mem)} / ${getInterval(memPeak)}\n' : ''); // Current and Total Memory Usage
 		}
 	}
